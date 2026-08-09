@@ -78,3 +78,5 @@ graphify-out/
 datasets_fichas/
 *.csv
 *.xlsx
+
+v,hashlib
