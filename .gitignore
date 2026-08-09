@@ -1,0 +1,80 @@
+# ── .gitignore IAG-OS · repos de análisis económico ─────────────────
+# Regla: el repo versiona CÓDIGO y DOCUMENTACIÓN. Los datos viven fuera.
+# Si un dato es chico y canónico (un diccionario, un crosswalk), agregalo
+# con `git add -f` y dejá una nota en el vault explicando por qué.
+
+# ── Datos (por extensión: robusto ante nombres de carpeta) ──────────
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.parquet
+*.feather
+*.rds
+*.RData
+*.rda
+*.dta
+*.sav
+*.sas7bdat
+*.zip
+*.7z
+*.gz
+*.tar
+
+# ── Carpetas de datos (ES + EN: los repos mezclan ambos idiomas) ────
+data/
+datos/
+datosalarios/
+raw/
+crudos/
+datasets/
+bases/
+microdatos/
+output/
+outputs/
+salidas/
+resultados/
+cache/
+tmp/
+temp/
+
+# ── Entornos y dependencias ────────────────────────────────────────
+.venv/
+.venv_old/
+venv/
+env/
+__pycache__/
+*.pyc
+renv/library/
+renv/staging/
+packrat/lib*/
+node_modules/
+
+# ── Cache de IDE y sesión ──────────────────────────────────────────
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Artefactos de ingesta (derivados, se regeneran) ─────────────────
+repomix-output.md
+graphify-out/
+
+# ── Binarios pesados ───────────────────────────────────────────────
+*.mp4
+*.mov
+*.afm
+*.pfb
+*.ttf
+
+# ── fichas derivadas sin versionar · 2026-08-09 ────────────────────
+# Se regeneran desde los scripts; no son fuente.
+datasets_fichas/
+*.csv
+*.xlsx
